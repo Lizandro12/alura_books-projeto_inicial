@@ -10,6 +10,8 @@ async function getAPIBooks(){
     let booksWithDiscount = applyDiscount(booksList)
 
     showBooks(booksWithDiscount);
+
+    console.table(booksWithDiscount)
 }
 
 

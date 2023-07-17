@@ -5,5 +5,7 @@ function applyDiscount(booksList){
         return {...book, preco: book.preco - (book.preco * discount)}
     });
 
+    
+
    
 }
