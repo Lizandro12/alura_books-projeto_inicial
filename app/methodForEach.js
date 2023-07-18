@@ -2,10 +2,12 @@
 const elementForBooks = document.getElementById("livros");
 
 function showBooks(booksList){
+  elementForBooks.innerHTML = ""
     booksList.forEach(book => {
+    let availabilityOfBook = book.quantidade > 0 ? 'livro__imagens' : 'indisponivel'
         elementForBooks.innerHTML += `
         <div class="livro">
-        <img class="livro__imagens" src="${book.imagem}" alt="${book.alt}" />
+        <img class="${availabilityOfBook}" src="${book.imagem}" alt="${book.alt}" />
         <h2 class="livro__titulo">
           ${book.titulo}
         </h2>

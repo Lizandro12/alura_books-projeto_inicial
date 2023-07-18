@@ -1,5 +1,6 @@
 let booksList = [];
 
+
 const dataAPI = 'https://guilhermeonrails.github.io/casadocodigo/livros.json';
 
 
@@ -8,10 +9,9 @@ async function getAPIBooks(){
     booksList = await res.json();
 
     let booksWithDiscount = applyDiscount(booksList)
-
+    booksList = booksWithDiscount
     showBooks(booksWithDiscount);
 
-    console.table(booksWithDiscount)
 }
 
 
