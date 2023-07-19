@@ -1,7 +1,10 @@
 
-const elementForBooks = document.getElementById("livros");
+const elementForBooks = document.getElementById("livros")
+
+const elementWithTotalPriceValue = document.getElementById("valor_total_livros_disponiveis")
 
 function showBooks(booksList){
+  elementWithTotalPriceValue.innerHTML = ""
   elementForBooks.innerHTML = ""
     booksList.forEach(book => {
     let availabilityOfBook = book.quantidade > 0 ? 'livro__imagens' : 'indisponivel'
