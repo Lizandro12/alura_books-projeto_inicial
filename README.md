@@ -1,2 +1,2 @@
-# alura_books-projeto_inicial
- praticando manipulação de arrays
+# site de livros projecto inicial
+ Este caso de estudo foi construido com a intenção de praticar a manipulação de arrays com javascript
